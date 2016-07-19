@@ -22,10 +22,10 @@ try:
     else :
         b.visit("https://ckip.worksap.co.jp/cws/cws/srwtimerec")
         b.fill("user_id", "C170");
-        b.fill("password", "wencong38")
+        b.fill("password", "wwcong38")
         b.find_by_value(u" 出 社 / Work start ").click()
-        b.quit()
         log("Recorded");
+    b.quit()
         
 except Exception, e:
 	log(traceback.format_exc())
